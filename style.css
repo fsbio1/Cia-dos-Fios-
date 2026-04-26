@@ -189,6 +189,13 @@ header {
     margin-bottom: 20px;
 }
 
+.produto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 #pesquisa {
     width: 100%;
     max-width: 400px;
