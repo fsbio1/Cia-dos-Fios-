@@ -8,8 +8,10 @@ const produtos = [
     { nome: "Lã Vermelha", preco: "R$ 12,00", descricao: "Lã macia vermelha.", imagem: "img/la-vermelha.jpg", categoria: "lãs" },
 
     // Tesouras
-    { nome: "Tesoura Pequena", preco: "R$ 15,00", descricao: "Tesoura prática para detalhes.", imagem: "img/tesoura-pequena.jpg", categoria: "tesouras" },
-    { nome: "Tesoura Grande", preco: "R$ 25,00", descricao: "Tesoura robusta para tecidos.", imagem: "img/tesoura-grande.jpg", categoria: "tesouras" },
+    { nome: "Tesoura ponto vermelho MONDIAL", preco: "R$ 90,00", descricao: "Tesoura profissional para detalhes.", imagem: "IMG/tesoura_pontovermelho.jpg", categoria: "tesouras" },
+    { nome: "Tesoura MONDIAL", preco: "R$ 32,00", descricao: "Tesoura MONDIAL segunda linha.", imagem: "IMG/tesoura_mondial.jpg", categoria: "tesouras" },
+    { nome: "Tesoura simples rosa", preco: "R$ 20,00", descricao: "Tesoura simples.", imagem: "IMG/tesoura.jpg", categoria: "tesouras" },
+    { nome: "agulha", preco: "R$ 25,00", descricao: "Tesoura robusta para tecidos.", imagem: "img/agulha_cabogrosso.jpg", categoria: "tesouras" },
 
     // Zíperes
     { nome: "Zíper Azul 20cm", preco: "R$ 3,00", descricao: "Zíper azul reforçado.", imagem: "img/ziper-azul.jpg", categoria: "zíperes" },
