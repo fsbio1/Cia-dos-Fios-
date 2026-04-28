@@ -190,8 +190,11 @@ header {
 }
 
 .produto img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -225,11 +228,6 @@ header {
     box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
 }
 
-.produto img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
 
 .produto h3 {
     font-size: 1.1rem;
@@ -294,4 +292,85 @@ footer {
     padding: 20px;
     background: #b30000;
     color: white;
+}
+/* ==========================
+   MODAL (ZOOM IMAGEM)
+========================== */
+/* ==========================
+   MODAL (ZOOM IMAGEM)
+========================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.modal-conteudo {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+#caption {
+    margin: 15px auto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    max-width: 80%;
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: red;
+}
+@media (max-width: 768px) {
+    header {
+        height: 250px;
+        padding-bottom: 40px;
+    }
+
+    .categorias {
+        padding: 20px;
+    }
+
+    .produtos {
+        padding: 20px;
+    }
+
+    #pesquisa {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .produto {
+        text-align: center;
+    }
+
+    .produto img {
+        height: 180px;
+    }
 }
